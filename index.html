@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaClone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">InstaClone</h1>
+            <div class="nav-icons">
+                <button onclick="showPage('feed')">🏠</button>
+                <button onclick="showPage('profile')">👤</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="feed-page" class="page">
+            <div class="post">
+                <div class="post-header">
+                    <img src="https://picsum.photos/30/30" class="user-thumb">
+                    <span>usuario_exemplo</span>
+                </div>
+                <img src="https://picsum.photos/600/600" class="post-img">
+                <div class="post-footer">
+                    <div class="actions">❤️ 💬 ✈️</div>
+                    <p><strong>usuario_exemplo</strong> Explorando o mundo! 🚀</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile-page" class="page" style="display: none;">
+            <header class="profile-header">
+                <img src="https://picsum.photos/150/150" class="profile-pic">
+                <div class="profile-info">
+                    <h2>meu_perfil_2026</h2>
+                    <div class="stats">
+                        <span><strong>12</strong> posts</span>
+                        <span><strong>450</strong> seguidores</span>
+                    </div>
+                    <button class="edit-btn">Editar Perfil</button>
+                </div>
+            </header>
+            <div class="profile-grid">
+                <img src="https://picsum.photos/300/300?random=1">
+                <img src="https://picsum.photos/300/300?random=2">
+                <img src="https://picsum.photos/300/300?random=3">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
